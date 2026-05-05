@@ -1,0 +1,179 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   MOBILE BODY + BACKGROUND
+========================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    color: #e5e7eb;
+    /* MOBILE BACKGROUND (BERBEDA DARI DESKTOP) */
+    background: linear-gradient(-45deg, #0ea5e9, #8b5cf6, #0f172a, #1e293b);
+    background-size: 300% 300%;
+    animation: mobileBg 10s ease infinite;
+}
+
+
+/* animasi background mobile */
+
+@keyframes mobileBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =========================
+   CONTAINER (MOBILE STYLE)
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   INPUT (MOBILE FRIENDLY)
+========================= */
+
+input {
+    width: 70px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+/* focus glow */
+
+input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* efek tekan */
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   TABLE (SAFE MOBILE)
+========================= */
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+td {
+    padding: 4px;
+}
+
+
+/* =========================
+   OUTPUT
+========================= */
+
+#output {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* step box */
+
+#output p {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 10px;
+    border-left: 4px solid #8b5cf6;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+
+/* =========================
+   MATHJAX
+========================= */
+
+mjx-container {
+    font-size: 1.1em !important;
+}
